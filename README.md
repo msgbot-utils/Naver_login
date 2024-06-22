@@ -1,2 +1,11 @@
 # Naver_login
-네이버 로그인을 위한 코드
+This module for Naver login
+
+# example
+```js
+let login = require("Naver_login");
+let cookie = login("naver_id", "naver_pw");
+
+/* Use cookie with naver service */
+```
+
