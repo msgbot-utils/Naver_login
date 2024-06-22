@@ -11,7 +11,7 @@ let cookie = login("naver_id", "naver_pw");
 
 # open source License
 <details>
-<summary>lz-string</summary>
+ <summary>lz-string</summary>
 
 ```
 MIT License
