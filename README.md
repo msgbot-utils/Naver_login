@@ -1,5 +1,5 @@
 # Naver_login
-This module for Naver login
+This module for Naver login in Rhino js
 
 # example
 ```js
