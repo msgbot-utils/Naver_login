@@ -8,7 +8,7 @@ importClass(java.lang.StringBuilder)
 importClass(org.jsoup.Connection)
 
 const createBvsd = require("./createBvsd")
-const { CompressToEncodedURIComponent } = require("./lz-string.min")
+const lzString = require("./lz-string.min")
 
 module.exports = function naver_login(id, pw) {
     const dom = Jsoup.connect("https://nid.naver.com/nidlogin.login?svctype=262144").get()
@@ -76,6 +76,6 @@ module.exports = function naver_login(id, pw) {
 
     return JSON.stringify({
       "uuid": uuid,
-      "encData": compressToEncodedURIComponent(JSON.stringify(bvsd))
+      "encData": lzString.compressToEncodedURIComponent(JSON.stringify(bvsd))
     })
   }
