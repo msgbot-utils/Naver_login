@@ -1,5 +1,5 @@
 # Naver_login
-This module for Naver login in Rhino js
+This module for Naver login in Rhino js (Download)[https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fmsgbot-utils%2FNaver_login%2Ftree%2Fmain%2FNaver_login]
 
 # example
 ```js
