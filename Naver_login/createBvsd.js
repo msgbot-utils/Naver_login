@@ -1,4 +1,4 @@
-module.exports = function createTemplet(uuid, id) {
+module.exports = function createBvsd(uuid, id) {
     return {
         "a": uuid,
         "b": "1.3.9",
