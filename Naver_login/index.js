@@ -7,6 +7,9 @@ importClass(java.math.BigInteger)
 importClass(java.lang.StringBuilder)
 importClass(org.jsoup.Connection)
 
+const createBvsd = require("./bvsd_templet")
+const { CompressToEncodedURIComponent } = require("./lz-string.min")
+
 module.exports = function naver_login(id, pw) {
     const dom = Jsoup.connect("https://nid.naver.com/nidlogin.login?svctype=262144").get()
 
@@ -68,15 +71,11 @@ module.exports = function naver_login(id, pw) {
   }
 
   function makeBvsd(id) {
-    const bvsd = require("./bvsd_templet")
     const uuid = UUID.randomUUID() + "-0"
-
-    bvsd.a = uuid
-    bvsd.d[0].b.a = ["0," + id]
-    bvsd.d[0].d = id
+    const bvsd = createBvsd(uuid, id)
 
     return JSON.stringify({
       "uuid": uuid,
-      "encData": require("./lz-string.min").compressToEncodedURIComponent(JSON.stringify(bvsd))
+      "encData": compressToEncodedURIComponent(JSON.stringify(bvsd))
     })
   }
