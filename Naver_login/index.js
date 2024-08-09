@@ -7,7 +7,7 @@ importClass(java.math.BigInteger)
 importClass(java.lang.StringBuilder)
 importClass(org.jsoup.Connection)
 
-const createBvsd = require("./bvsd_templet")
+const createBvsd = require("./createBvsd")
 const { CompressToEncodedURIComponent } = require("./lz-string.min")
 
 module.exports = function naver_login(id, pw) {
