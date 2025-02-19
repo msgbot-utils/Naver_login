@@ -1,3 +1,10 @@
+# 모듈 사용 불가
+현재 네이버 로그인 구조 변경으로 해당 모듈을 사용할 수 없습니다.
+
+언제 고칠진 모르겠어요. ~~귀찮아~~
+
+
+
 # Naver_login
 This module for Naver login in Rhino js
 
